@@ -48,6 +48,9 @@ rm -rf %{buildroot}
 %doc build/sphinx/html/*
 
 %changelog
+* Wed Oct 09 2013 Chris St. Pierre <cstpierre@amplify.com> 0.1.4-3
+- set python_sitelib macro on el5 (cstpierre@amplify.com)
+
 * Wed Oct 09 2013 Chris St. Pierre <chris.a.st.pierre@gmail.com> 0.1.4-2
 - fixed source tarball name (chris.a.st.pierre@gmail.com)
 
