@@ -1,13 +1,11 @@
-%define unmangled_name simpleversions
-
-Name: python-%{unmangled_name}
+Name: python-simpleversions
 Version: 0.1.4
-Release: 1
+Release: 2
 Summary: Library for sorting versions using a simple versioning scheme
 License: MIT
 Group: Development/Libraries
 Url: https://github.com/amplify-education/simpleversions
-Source0: %{unmangled_name}-%{version}.tar.gz
+Source0: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 
@@ -27,7 +25,7 @@ BuildRequires:    python-sphinx >= 1.0
 Library for sorting versions using a simple versioning scheme.
 
 %prep
-%setup -qn %{unmangled_name}-%{version}
+%setup -q
 
 %build
 %{__python} setup.py build
@@ -50,5 +48,4 @@ rm -rf %{buildroot}
 - new package built with tito
 
 * Wed Oct 09 2013 Chris St. Pierre <chris.a.st.pierre@gmail.com>
-- 
-
+-
