@@ -34,9 +34,13 @@ def version_as_list(version):
 
     Components are separated by , or . characters
     """
-    values = re.split("[.,]", version)
-    return [int(v) if v != "" else 0
-            for v in values]
+    rv = []
+    for val in re.split("[.,]", version):
+        if val:
+            rv.append(int(val))
+        else:
+            rv.append(0)
+    return rv
 
 def split_revisions(version_string):
     """
