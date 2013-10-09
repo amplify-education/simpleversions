@@ -1,6 +1,10 @@
+%if 0%{?rhel} && 0%{?rhel} <= 5
+%global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")
+%endif
+
 Name: python-simpleversions
 Version: 0.1.4
-Release: 2
+Release: 3
 Summary: Library for sorting versions using a simple versioning scheme
 License: MIT
 Group: Development/Libraries
