@@ -7,7 +7,7 @@ except ImportError:
 
 setup(
     name='simpleversions',
-    version='0.1.2',
+    version='0.1.4',
     py_modules=['simpleversions'],
     zip_safe=False,
 )

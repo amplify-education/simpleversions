@@ -46,6 +46,9 @@ rm -rf %{buildroot}
 %doc build/sphinx/html/*
 
 %changelog
+* Wed Oct 09 2013 Chris St. Pierre <chris.a.st.pierre@gmail.com> 0.1.4-1
+- new package built with tito
+
 * Wed Oct 09 2013 Chris St. Pierre <chris.a.st.pierre@gmail.com>
 - 
 
